@@ -80,7 +80,7 @@ async function CargarProductos() {
 
     productos.map(producto => {
 
-        Producto += `<div class="col-md-6 m-2" style="width: 550px; height: 300px;">
+        Producto += `<div class="col-md-6 m-2" style="width: 550px; height: 350px;">
         <div class="card-box-d">
           <div class="card-img-d">
             <img src="${producto.linkImagen}" alt="Error del api" class="img-d img-fluid">
