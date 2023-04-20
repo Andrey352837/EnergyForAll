@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="CargarProductosCarrucel()">
 
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -44,23 +44,18 @@
 
           <li class="nav-item">
             <a class="nav-link " href="Pages/Productos.html">Productos</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="Pages/blog-grid.html">Blog</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link " href="Pages/Acercade.html">Acerca de..</a>
-          </li>
-          
+          </li>   
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros</a>
             <div class="dropdown-menu">
               <a class="dropdown-item " href="Pages/ProductoMasVendido.html">Producto Mas Vendido</a>
-              <a class="dropdown-item " href="Pages/BlogdelProductoMasVendido.html">Blog del Producto Mas Vendido</a>
-              <a class="dropdown-item " href="Pages/Creador.html">Creador</a>
+              <a class="dropdown-item " href="Pages/Servicios.html">Servicios</a>
+              <a class="dropdown-item " href="Pages/Creador.html">Creador</a>            
+                <a class="dropdown-item "  href="Pages/TeoriaPanel.html">Teoria sobre los paneles</a>              
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Pages/Acercade.html">Acerca de..</a>
           </li>
 
           <li class="nav-item">
@@ -102,7 +97,7 @@
                       <br>
                     </h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el panel mas vendido</span></a>
+                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el paneles</span></a>
                     </p>
                   </div>
                 </div>
@@ -124,7 +119,7 @@
                       <span class="color-d">Paneles</span> 
                     </h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el panel mas vendido</span></a>
+                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el paneles</span></a>
                     </p>
                   </div>
                 </div>
@@ -146,7 +141,7 @@
                       <span class="color-d">Paneles</span> 
                     </h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el panel mas vendido</span></a>
+                      <a href="Pages/ProductoMasVendido.html"><span class="price-a">Ver el paneles</span></a>
                     </p>
                   </div>
                 </div>
@@ -155,25 +150,72 @@
           </div>
         </div>
       </div>
+
+      
     </div>
     <div class="swiper-pagination"></div>
-  </div><!-- End Intro Section -->
+  </div><!-- End Intro Section -->  
 </section>
-  <main id="main">
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <div class="title-single-box">
+          <h1 class="title-a">¿Quienes somos?</h1>
+          <span class="color-text-a"> 
+            Energy for all es una empresa dedicada exclusivamente a la energía solar, centrándonos en la venta de paneles solares y la promoción de un futuro más sostenible. Nos enorgullecemos de ofrecer soluciones personalizadas para hogares y negocios que buscan reducir su huella de carbono y ahorrar en sus facturas de energía. Nos comprometemos a brindar a nuestros clientes un servicio excepcional y una atención personalizada en cada paso del proceso.
+            <br>
+            <br>
+Desde la venta de paneles solares de alta calidad hasta la instalación y el mantenimiento, estamos dedicados a hacer que la energía solar sea accesible para todos. Nos apasiona ayudar a nuestros clientes a aprovechar al máximo los beneficios de la energía solar y estamos comprometidos a proporcionar soluciones innovadoras y eficientes para lograrlo. Creemos que la energía solar es el futuro y estamos orgullosos de liderar el camino en la adopción de esta fuente de energía limpia y renovable en Costa Rica.
+<br>
+<br>
+Como líderes en la venta de paneles solares en el país, nos comprometemos a hacer que la energía solar sea más accesible y asequible para todos. Con Energy for all, puedes estar seguro de que estás trabajando con una empresa que se preocupa por el medio ambiente y por brindar soluciones solares de alta calidad. Si estás buscando una empresa de paneles solares confiable y comprometida, no busques más allá de Energy for all.
+
+          </span>
+        </div>
+      </div>      
+    </div>
+
+  </div>
+ <!-- End Intro Single-->                                  
 
     <!-- ======= Services Section ======= -->
-    <section class="section-services section-t8">
+    <section class="section-services section-t3">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Our Services</h2>
+                <h2 class="title-a">Servicios</h2>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-bag-heart"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Venta</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                 Cualquier de nuestros productos son de alta gama la cual, tiene certificaciones las cuales respaldan su optimo funcionamiento y calides sobre este.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="Pages/Servicios.html" class="link-c link-icon">Ver mas
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
           <div class="col-md-4">
             <div class="card-box-c foo">
               <div class="card-header-c d-flex">
@@ -181,18 +223,18 @@
                   <span class="bi bi-cart"></span>
                 </div>
                 <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Lifestyle</h2>
+                  <h2 class="title-c">Compra</h2>
                 </div>
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  Tenemos un gran servicio al cliente,
+                  el cual le proporcionara cualquier informacion importante sobre su compra, 
+                 tambien contamos con excelente servio de garantia por si su producto se encuentra defectuoso.
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
+                <a href="Pages/Servicios.html" class="link-c link-icon">Ver mas
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -202,667 +244,65 @@
             <div class="card-box-c foo">
               <div class="card-header-c d-flex">
                 <div class="card-box-ico">
-                  <span class="bi bi-calendar4-week"></span>
+                  <span class="bi bi-box2-heart"></span>
                 </div>
                 <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Loans</h2>
+                  <h2 class="title-c">Empaque</h2>
                 </div>
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit
-                  aliquet elit, eget tincidunt
-                  nibh pulvinar a.
+                 Contamos con diseños los cuales son faciles de transportar, 
+                 a cualquie parte del pais tenemos servicios de fletes para llevarlo hasta su casa, 
+                 dependiendo del producto este servicio no tiene costes.
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="bi bi-calendar4-week"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-card-checklist"></span>
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Sell</h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
+                <a href="Pages/Servicios.html" class="link-c link-icon">Ver mas
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Latest Properties Section ======= -->
+    <!-- Carrrucel Section -->
     <section class="section-property section-t8">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Latest Properties</h2>
-              </div>
-              <div class="title-link">
-                <a href="property-grid.html">All Property
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="title-box-d">
+          <h3 class="title-d">Productos:</h3>
+        </div>       
 
         <div id="property-carousel" class="swiper">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id = "carrucel">
 
-            <div class="carousel-item-b swiper-slide">
-              <div class="card-box-a card-shadow">
-                <div class="img-box-a">
-                  <img src="assets/img/property-6.jpg" alt="" class="img-a img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-overlay-a-content">
-                    <div class="card-header-a">
-                      <h2 class="card-title-a">
-                        <a href="property-single.html">206 Mount
-                          <br /> Olive Road Two</a>
-                      </h2>
-                    </div>
-                    <div class="card-body-a">
-                      <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
-                      </div>
-                      <a href="#" class="link-a">Click here to view
-                        <span class="bi bi-chevron-right"></span>
-                      </a>
-                    </div>
-                    <div class="card-footer-a">
-                      <ul class="card-info d-flex justify-content-around">
-                        <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Beds</h4>
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Garages</h4>
-                          <span>1</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-b swiper-slide">
-              <div class="card-box-a card-shadow">
-                <div class="img-box-a">
-                  <img src="assets/img/property-3.jpg" alt="" class="img-a img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-overlay-a-content">
-                    <div class="card-header-a">
-                      <h2 class="card-title-a">
-                        <a href="property-single.html">157 West
-                          <br /> Central Park</a>
-                      </h2>
-                    </div>
-                    <div class="card-body-a">
-                      <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
-                      </div>
-                      <a href="property-single.html" class="link-a">Click here to view
-                        <span class="bi bi-chevron-right"></span>
-                      </a>
-                    </div>
-                    <div class="card-footer-a">
-                      <ul class="card-info d-flex justify-content-around">
-                        <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Beds</h4>
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Garages</h4>
-                          <span>1</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-b swiper-slide">
-              <div class="card-box-a card-shadow">
-                <div class="img-box-a">
-                  <img src="assets/img/property-7.jpg" alt="" class="img-a img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-overlay-a-content">
-                    <div class="card-header-a">
-                      <h2 class="card-title-a">
-                        <a href="property-single.html">245 Azabu
-                          <br /> Nishi Park let</a>
-                      </h2>
-                    </div>
-                    <div class="card-body-a">
-                      <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
-                      </div>
-                      <a href="property-single.html" class="link-a">Click here to view
-                        <span class="bi bi-chevron-right"></span>
-                      </a>
-                    </div>
-                    <div class="card-footer-a">
-                      <ul class="card-info d-flex justify-content-around">
-                        <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Beds</h4>
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Garages</h4>
-                          <span>1</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-b swiper-slide">
-              <div class="card-box-a card-shadow">
-                <div class="img-box-a">
-                  <img src="assets/img/property-10.jpg" alt="" class="img-a img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-overlay-a-content">
-                    <div class="card-header-a">
-                      <h2 class="card-title-a">
-                        <a href="property-single.html">204 Montal
-                          <br /> South Bela Two</a>
-                      </h2>
-                    </div>
-                    <div class="card-body-a">
-                      <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
-                      </div>
-                      <a href="property-single.html" class="link-a">Click here to view
-                        <span class="bi bi-chevron-right"></span>
-                      </a>
-                    </div>
-                    <div class="card-footer-a">
-                      <ul class="card-info d-flex justify-content-around">
-                        <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Beds</h4>
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Garages</h4>
-                          <span>1</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
+            
           </div>
         </div>
         <div class="propery-carousel-pagination carousel-pagination"></div>
 
       </div>
-    </section><!-- End Latest Properties Section -->
-
-    <!-- ======= Agents Section ======= -->
-    <section class="section-agents section-t8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Best Agents</h2>
-              </div>
-              <div class="title-link">
-                <a href="agents-grid.html">All Agents
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
+    </section>
+  </div>
+</div>
+</section>
+ <!-- ======= Contact Single ======= -->
+ <section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-18" >
+        <div class="contact-map box">
+          <div id="map" class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.117336182999!2d-84.21989158680456!3d10.007165692846256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9b849cff0e5%3A0xe957d37175f9104a!2sEdificio%20de%20aulas%20y%20laboratorios%20de%20la%20sede%20central%2C%20UTN!5e0!3m2!1ses-419!2scr!4v1681944532430!5m2!1ses-419!2scr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card-box-d">
-              <div class="card-img-d">
-                <img src="assets/img/agent-4.jpg" alt="" class="img-d img-fluid">
-              </div>
-              <div class="card-overlay card-overlay-hover">
-                <div class="card-header-d">
-                  <div class="card-title-d align-self-center">
-                    <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Margaret Sotillo
-                        <br> Escala</a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
-                  <div class="info-agents color-a">
-                    <p>
-                      <strong>Phone: </strong> +54 356 945234
-                    </p>
-                    <p>
-                      <strong>Email: </strong> agents@example.com
-                    </p>
-                  </div>
-                </div>
-                <div class="card-footer-d">
-                  <div class="socials-footer d-flex justify-content-center">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-linkedin" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-d">
-              <div class="card-img-d">
-                <img src="assets/img/agent-1.jpg" alt="" class="img-d img-fluid">
-              </div>
-              <div class="card-overlay card-overlay-hover">
-                <div class="card-header-d">
-                  <div class="card-title-d align-self-center">
-                    <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Stiven Spilver
-                        <br> Darw</a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
-                  <div class="info-agents color-a">
-                    <p>
-                      <strong>Phone: </strong> +54 356 945234
-                    </p>
-                    <p>
-                      <strong>Email: </strong> agents@example.com
-                    </p>
-                  </div>
-                </div>
-                <div class="card-footer-d">
-                  <div class="socials-footer d-flex justify-content-center">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-linkedin" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-d">
-              <div class="card-img-d">
-                <img src="assets/img/agent-5.jpg" alt="" class="img-d img-fluid">
-              </div>
-              <div class="card-overlay card-overlay-hover">
-                <div class="card-header-d">
-                  <div class="card-title-d align-self-center">
-                    <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Emma Toledo
-                        <br> Cascada</a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
-                  <div class="info-agents color-a">
-                    <p>
-                      <strong>Phone: </strong> +54 356 945234
-                    </p>
-                    <p>
-                      <strong>Email: </strong> agents@example.com
-                    </p>
-                  </div>
-                </div>
-                <div class="card-footer-d">
-                  <div class="socials-footer d-flex justify-content-center">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#" class="link-one">
-                          <i class="bi bi-linkedin" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Agents Section -->
-
-    <!-- ======= Latest News Section ======= -->
-    <section class="section-news section-t8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Latest News</h2>
-              </div>
-              <div class="title-link">
-                <a href="blog-grid.html">All News
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="news-carousel" class="swiper">
-          <div class="swiper-wrapper">
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-2.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">House</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">House is comming
-                          <br> new</a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-5.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Travel</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">Travel is comming
-                          <br> new</a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-7.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Park</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">Park is comming
-                          <br> new</a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-3.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Travel</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="#">Travel is comming
-                          <br> new</a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-          </div>
-        </div>
-
-        <div class="news-carousel-pagination carousel-pagination"></div>
-      </div>
-    </section><!-- End Latest News Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section class="section-testimonials section-t8 nav-arrow-a">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Testimonials</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="testimonial-carousel" class="swiper">
-          <div class="swiper-wrapper">
-
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/testimonial-1.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                        debitis hic ber quibusdam
-                        voluptatibus officia expedita corpori.
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/mini-testimonial-1.jpg" alt="" class="testimonial-avatar">
-                      <h5 class="testimonial-author">Albert & Erika</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                        debitis hic ber quibusdam
-                        voluptatibus officia expedita corpori.
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
-                      <h5 class="testimonial-author">Pablo & Emma</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-          </div>
-        </div>
-        <div class="testimonial-carousel-pagination carousel-pagination"></div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-  </main><!-- End #main -->
+      </div>      
+    </div>
+  </div>
+</section><!-- End Contact Single-->
 
   <!-- ======= Footer ======= -->
   <section class="section-footer">
@@ -893,30 +333,32 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">Acerca de</h3>
+              <h3 class="w-title-a text-brand">Acerca de...</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled">    
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="Pages/Contactenos.html">Sitio Ubicado</a>
-                  </li>
+                    <i class="bi bi-chevron-right"></i> <a href="Pages/ProductoMasVendido.html">Producto mas vendido</a>
+                  </li>          
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="Pages/Creador.html">Autor</a>
-                  </li>
+                    <i class="bi bi-chevron-right"></i> <a href="Pages/Servicios.html">Servicios</a>
+                  </li>   
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="Pages/ProductoMasVendido.html">Producto Estrella</a>
+                    <i class="bi bi-chevron-right"></i> <a href="Pages/Creador.html">Creador</a>
                   </li>
+                  
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="Pages/BlogdelProductoMasVendido.html">Opiniones</a>
+                    <i class="bi bi-chevron-right"></i> <a href="Pages/TeoriaPanel.html">Teoria sobre los paneles solares</a>
                   </li>
+                 
                   
                    <a >Politica Privada</a>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
@@ -939,7 +381,8 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"> 
+
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
@@ -949,10 +392,10 @@
                 <a href="Pages/Acercade.html">Acerca de</a>
               </li>
               <li class="list-inline-item">
-                <a href="Pages/Productos-grid.html">Productos</a>
+                <a href="Pages/Productos.html">Productos</a>
               </li>
               <li class="list-inline-item">
-                <a href="Pages/blog-grid.html">Blog</a>
+                <a href="Pages/Creador.html">Creador</a>
               </li>
               <li class="list-inline-item">
                 <a href="Pages/contactenos.html">Contactenos</a>
@@ -1013,6 +456,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/APIProductos.js"></script>
 
 </body>
 

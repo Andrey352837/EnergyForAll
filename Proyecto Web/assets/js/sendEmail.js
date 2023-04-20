@@ -74,24 +74,8 @@ function sendEmail() {
     grados.forEach(e => {
         gradosStr += `<li>${e}</li>`;
     })
+   
 
-    Email.send({   
-        Host: `smtp.elasticemail.com`,
-        Username: `rodrigojimenezporras35@gmail.com`,
-        Password: `A42B68CBF47EF29DB1ADAD0FE7A8CF3863B3`,
-        To: `rodrigojimenezporras35@gmail.com`,
-        From: `rodrigojimenezporras35@gmail.com`,
-        Subject: `hola`,
-        Body: `
-        ${email} 
-        ${nombre} 
-        ${edad}
-        ${rango}
-        ${mensaje}   `
-           }).then(
-        message => alert(message)
-    ).catch(e => {
-        console.log(e);
-    });
+    
 
 }

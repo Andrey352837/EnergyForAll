@@ -53,6 +53,7 @@ async function CargarTamanno() {
     options = "";
     console.log(tamannos.categoria.id)
     tamannos = tamannos.Tamanno;
+    
 
     tamannos.map(tamanno => {
 
@@ -79,7 +80,7 @@ async function CargarProductos() {
     }
 
     productos.map(producto => {
-
+console.log(producto)
         Producto += `<div class="col-md-6 m-2" style="width: 550px; height: 350px;">
         <div class="card-box-d">
           <div class="card-img-d">
@@ -116,6 +117,7 @@ async function Productos() {
 }
 
 
+
 function Filtro() {
 
     let idCategoria = document.getElementById("Categoria");
@@ -132,4 +134,69 @@ function Filtro() {
 function removeFilter() {
 
     localStorage.removeItem('datosFiltrados');
+}
+
+
+
+var tamanno = document.querySelector('#tamanno');
+
+async function CargarTamanno() {
+
+    var tamannos = await TraerTodo();
+    options = "";
+    console.log(tamannos.categoria.id)
+    tamannos = tamannos.Tamanno;
+
+    tamannos.map(tamanno => {
+
+        options += `<option value=${tamanno.id}>${tamanno.tamanno}</option>`
+    })
+
+    tamanno.innerHTML = options;
+
+}
+
+
+var ProductosCarrucel = document.querySelector('#carrucel');
+
+async function CargarProductosCarrucel() {
+   
+    var productos = await TraerTodo();
+
+    productos = productos.producto;
+
+    
+
+    productos.map(producto => {
+
+        Producto += `
+        <div class="carousel-item-b swiper-slide">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="${producto.linkImagen}" alt="" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="Pages/Productos.html">Ver Productos</a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a">Aprendido en el 2021</span>
+                  </div>
+                 
+                </div>
+                <div class="card-footer-a">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    })
+
+    ProductosCarrucel.innerHTML = Producto;
+
 }
