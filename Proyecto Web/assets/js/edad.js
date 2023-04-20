@@ -17,6 +17,6 @@ function CalculateAge(birthDateString) {
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-
+    console.log("La edad es de ",age);
     ageDom.innerHTML = age;
 }

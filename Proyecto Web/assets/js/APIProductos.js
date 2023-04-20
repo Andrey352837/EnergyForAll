@@ -200,3 +200,47 @@ async function CargarProductosCarrucel() {
     ProductosCarrucel.innerHTML = Producto;
 
 }
+
+var ProductosCarrucelServicios = document.querySelector('#carrucel');
+
+async function CargarProductosCarrucelServicios(){
+   
+  var productos = await TraerTodo();
+
+  productos = productos.producto;
+
+  
+
+  productos.map(producto => {
+
+      Producto += `
+      <div class="carousel-item-b swiper-slide">
+        <div class="card-box-a card-shadow">
+          <div class="img-box-a">
+            <img src="${producto.linkImagen}" alt="" class="img-a img-fluid">
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-a-content">
+              <div class="card-header-a">
+                <h2 class="card-title-a">
+                  <a href="Productos.html">Ver Productos</a>
+                </h2>
+              </div>
+              <div class="card-body-a">
+                <div class="price-box d-flex">
+                  <span class="price-a">Aprendido en el 2021</span>
+                </div>
+               
+              </div>
+              <div class="card-footer-a">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  })
+
+  ProductosCarrucelServicios.innerHTML = Producto;
+
+}
